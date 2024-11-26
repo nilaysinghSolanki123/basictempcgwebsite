@@ -39,6 +39,7 @@ nav {
     font-weight: bold;
     background: var(--gradient);
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-links {
@@ -77,6 +78,7 @@ nav {
     margin-bottom: 1rem;
     background: var(--gradient);
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero p {
@@ -112,6 +114,7 @@ nav {
     font-size: 2.5rem;
     background: var(--gradient);
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .services-grid {
@@ -157,6 +160,7 @@ nav {
     font-size: 2.5rem;
     background: var(--gradient);
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .stats-container {
