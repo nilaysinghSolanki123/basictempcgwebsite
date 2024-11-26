@@ -1,7 +1,7 @@
 :root {
-    --primary-green: #7de1bb;
-    --primary-blue: #87ceeb;
-    --gradient: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+    --primary-green: #2fca00;
+    --primary-blue: #009bc2;
+    --gradient: linear-gradient(90deg, var(--primary-blue), var(--primary-green));
 }
 
 * {
@@ -60,7 +60,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: 70vh;
     background: linear-gradient(135deg, rgba(135, 206, 235, 0.1), rgba(125, 225, 187, 0.1));
     display: flex;
     align-items: center;
@@ -70,7 +70,7 @@ nav {
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 .hero h1 {
@@ -82,7 +82,8 @@ nav {
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 2rem;
+    font-weight: bold;
     margin-bottom: 2rem;
     color: #666;
 }
@@ -102,12 +103,47 @@ nav {
     transform: translateY(-2px);
 }
 
+/* About Us Section */
+.aboutus {
+    padding: 5rem 2rem;
+    background: white;
+}
+.aboutus h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.aboutus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.about-card:hover {
+    transform: translateY(-5px);
+}
+.icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
 /* Services Section */
 .services {
     padding: 5rem 2rem;
     background: white;
 }
-
 .services h2 {
     text-align: center;
     margin-bottom: 3rem;
@@ -116,7 +152,6 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -124,7 +159,6 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .service-card {
     background: white;
     padding: 2rem;
@@ -133,11 +167,9 @@ nav {
     text-align: center;
     transition: transform 0.3s;
 }
-
 .service-card:hover {
     transform: translateY(-5px);
 }
-
 .icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
