@@ -39,7 +39,7 @@ nav {
     font-weight: bold;
     background: var(--gradient);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: ;
 }
 
 .nav-links {
