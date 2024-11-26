@@ -1,67 +1,46 @@
-/* styles.css */
+/* style.css */
+
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
 }
 
-.hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(to bottom, #34c6b9, #0049b7);
-    padding: 2rem;
-    color: white;
-}
-
-.hero-section nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-}
-
-.hero-section nav ul li {
-    display: inline;
-}
-
-.hero-section nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-.hero-content {
-    max-width: 50%;
-}
-
-.hero-image img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-.services, .case-studies {
-    padding: 2rem;
+header {
+    background-color: #F2F2F2;
+    padding: 20px;
     text-align: center;
 }
 
-.service-cards, .case-cards {
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#services, #case-studies {
+    padding: 40px;
+}
+
+.service, .case-study {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 
-.card {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    max-width: 300px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.service img, .case-study img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
 }
 
-.card h3 {
-    color: #0049b7;
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
