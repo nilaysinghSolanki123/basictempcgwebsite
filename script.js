@@ -2,7 +2,13 @@
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
+
+        const target = document.querySelector(this.getAttribute('href'));
+        const offset = 30; // Adjust for navbar height
+        const topPosition = target.offsetTop - offset;
+
+        window.scrollTo({
+            top: topPosition,
             behavior: 'smooth'
         });
     });
